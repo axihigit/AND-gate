@@ -1,0 +1,1 @@
+This repository documents a digital logic design workflow on CachyOS (Arch Linux). It utilizes Icarus Verilog (iverilog) for terminal-based source compilation and GTKWave for visual waveform analysis of Value Change Dump (.vcd) simulation files, providing a lightweight open-source environment for hardware verification.
