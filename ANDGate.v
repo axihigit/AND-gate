@@ -1,4 +1,4 @@
- // module and_gate ________________AND Gate________________
+ // module and_gate ________________AND Gate______Testbench+Dumpers(forwaveform output)_________________
  module and_gate
                   (
                   input wire a,
@@ -29,6 +29,13 @@
 
 // 3.Apply test stimuli over time
           initial begin
+
+  //setup waveform file for GTkWave
+    //dumpfile is bascially storing the record the recorded data
+      $dumpfile("and_waveform.vcd");
+    //dumpvars is to what to record(0) and where to record(tb_and_gate) testbench stuff
+    $dumpvars(0,tb_and_gate);
+
           $display("Time | A | B | Y");
 
         //set initail values and wait with time delay (#)
